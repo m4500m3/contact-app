@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--color-yellow-orange);
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  color: var(--color-american-blue);
+  box-sizing: border-box;
+}
+
+.header h1 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--color-american-blue);
+  text-transform: uppercase;
+  margin: 0 20px;
+}
+
+.footer {
+  text-align: center;
+  background-color: var(--color-yellow-orange);
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+  color: var(--color-american-blue);
+}

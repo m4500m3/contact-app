@@ -1,0 +1,90 @@
+.contactListContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  color: var(--color-american-blue);
+}
+
+.deleteBtn {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-american-blue);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 32px;
+  cursor: pointer;
+  font-size: 14px;
+  height: 40px;
+  width: 220px;
+}
+
+.deleteBtn svg {
+  margin-right: 10px;
+}
+
+.deleteBtn:disabled {
+  background-color: var(--color-seashell);
+  color: var(--color-yellow-orange);
+}
+
+.contactListHeader {
+  font-weight: 500;
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  padding: 0;
+  background-color: var(--color-seashell);
+  border-radius: 32px;
+}
+
+.contactListHeader li {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 10px 5px;
+  text-align: left;
+  color: var(--color-american-blue);
+}
+
+.contactListHeader li:first-child {
+  flex: 0.3;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 500px) {
+  .contactListHeader,
+  .contactListItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contactListHeader div,
+  .contactListItem div {
+    flex: none;
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  .contactListItem div:last-child {
+    flex: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.notFound,
+.message {
+  text-align: center;
+  color: var(--color-yellow-orange);
+  font-size: 14px;
+}
