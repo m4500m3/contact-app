@@ -45,6 +45,7 @@ const ContactList = ({
         <li>Name</li>
         <li>Email</li>
         <li>Phone</li>
+        <li>City</li>
         <li>Actions</li>
       </ul>
       {noContactsFound ? (

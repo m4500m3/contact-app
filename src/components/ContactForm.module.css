@@ -58,36 +58,58 @@ h2 {
   margin-bottom: 15px;
 }
 
-.formGroup label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
+.formGroup div {
+  margin-bottom: 20px;
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
 }
 
-.formGroup input {
-  width: 270px;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
+.formGroup div label,
+.formGroup div input {
+  width: 100%;
+  height: 40px;
+  padding: 10px 15px;
   box-sizing: border-box;
-  color: var(--color-american-blue);
   font-weight: 500;
   font-size: 14px;
   text-align: left;
-  height: 40px;
+  border: none;
+  color: var(--color-american-blue);
   background: transparent;
-  border-radius: 32px;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
-  border: 1px solid rgb(222, 210, 184);
+  margin: 0;
+  font-family: inherit;
 }
 
-.formGroup input:focus {
+.formGroup div input::placeholder {
+  color: rgba(58, 57, 103, 0.5);
+}
+
+.formGroup div label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  color: rgba(58, 57, 103, 0.3);
+}
+
+.formGroup div input {
+  z-index: 2;
+  border: 1px solid hsl(41, 37%, 80%);
+  border-radius: 32px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+}
+
+.formGroup div input:focus {
   outline: none;
 }
 
 .error {
   color: red;
-  font-size: 13px;
+  font-size: 12px;
   margin-top: 5px;
 }
 

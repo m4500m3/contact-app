@@ -11,7 +11,7 @@ function ContactItem({
   toggleSelect,
 }) {
   // console.log(data);
-  const { id, firstName, lastName, email, phone } = data;
+  const { id, firstName, lastName, email, phone, city } = data;
   return (
     <ul className={styles.contactListItem}>
       <li>
@@ -33,6 +33,7 @@ function ContactItem({
       <li>{`${firstName} ${lastName}`}</li>
       <li>{email}</li>
       <li>{phone}</li>
+      <li>{city}</li>
       <li>
         <button onClick={() => onEdit(data)} className={styles.actionButton}>
           <FaUserEdit />
